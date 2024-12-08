@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tea-House-Resources</title>
+    <title>Tea House</title>
     <link rel="stylesheet" href="styles/style.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css"
@@ -35,8 +35,58 @@
     </script>
   </head>
   <body class="m-0 font-manrope">
-    <header class="mt-10 mb-[15%]">
+    <header class="mt-24 mb-[15%]">
       <section class="header w-[90vw] lg:w-[70vw] mx-auto">
+        <div
+        class="navbar lg:w-[70vw] mx-auto fixed top-0 z-50 bg-white backdrop-blur-md"
+      >
+        <div class="flex-1 text-left">
+          <img src="./images/cup.png" alt="navbar">
+        </div>
+        <div class="flex-none hidden lg:block">
+          <ul class="menu menu-horizontal items-center px-1">
+            <li><a>Home</a></li>
+            <li><a>Shop</a></li>
+            <li><a>News</a></li>
+            <li><a>Contact</a></li>
+            <li>
+              <button class="btn bg-gradient-to-r from-[#FF8938] to-[#FF0000] text-white px-7 rounded">
+                Login
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="dropdown dropdown-left dropdown-bottom">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h8m-8 6h16"
+              />
+            </svg>
+          </div>
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+          >
+            <li><a>Home</a></li>
+            <li><a>Shop</a></li>
+            <li><a>News</a></li>
+            <li><a>Contact</a></li>
+          </ul>
+        </div>
+        <button class="btn bg-gradient-to-r from-[#FF8938] to-[#FF0000] text-white w-1/4 block lg:hidden">
+          Login
+        </button>
+      </div>
         <div
           class="banner flex flex-col lg:flex-row items-center justify-center"
         >
@@ -236,6 +286,86 @@
         </div>
       </section>
       <section
+        class="Clients mt-[20%] lg:mt-[10%] mb-10 w-full h-auto space-y-5 flex flex-col lg:flex-row items-center justify-center gap-5 bg-gradient-to-r from-[#FF8938] to-[#FF0000] rounded-md py-32 px-5"
+      >
+        <div class=" relative clients-details text-center lg:text-start space-y-5 leading-loose flex-1 p-3 text-white">
+          <h1 class="text-3xl lg:text-5xl font-bold tracking-wider line-clamp-5 leading-8">Meet Our Super Clients</h1>
+          <p class="text-sm ">
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected
+            humour, or randomised words which don't look even slightly
+            believable.
+          </p>
+          <button class="btn bg-white px-8 border-0">
+            <span
+              class="bg-clip-text text-transparent bg-gradient-to-r from-[#FF0000] to-[#FF8938]"
+            >
+              Show All
+            </span>
+          </button>
+          <img class="absolute left-48 -bottom-48 hidden lg:block" src="./images/bg_cup.png" alt="">
+        </div>
+        <div class="flex-1 relative space-y-10">
+            <!-- next review -->
+            <div class="lg:w-[400px] relative opacity-40 z-10 bg-white py-8 px-7 space-y-3 rounded-lg">
+                <img
+                  class="absolute -left-5 -top-5 border-4 border-white bg-white rounded-full"
+                  src="./images/client.png"
+                  alt="client"
+                />
+                <p class="text-sm text-classic-primary text-justify">
+                  We are providing the best and suitable home insurance services for
+                  the people who are interested to treatment
+                </p>
+                <div>
+                  <h3 class="text-xl font-bold">Ilham Yuda</h3>
+                  <p class="text-sm text-classic-primary">Businessman</p>
+                </div>
+                <div class="circles flex justify-end">
+                  <img src="./images/circles.png" alt="circles" />
+                </div>
+              </div>
+            <!-- current review -->
+          <div class="lg:w-[400px] absolute left-10 bottom-36 lg:-left-10 lg:bottom-40 z-20 bg-white py-8 px-7 space-y-3 rounded-lg">
+            <img
+              class="absolute -left-5 -top-5 border-4 border-white bg-white rounded-full"
+              src="./images/client.png"
+              alt="client"
+            />
+            <p class="text-sm text-classic-primary text-justify">
+              We are providing the best and suitable home insurance services for
+              the people who are interested to treatment
+            </p>
+            <div>
+              <h3 class="text-xl font-bold">Ilham Yuda</h3>
+              <p class="text-sm text-classic-primary">Businessman</p>
+            </div>
+            <div class="circles flex justify-end">
+              <img src="./images/circles.png" alt="circles" />
+            </div>
+          </div>
+          <!-- previous review -->
+          <div class="lg:w-[400px]  relative opacity-40 z-10 bg-white py-8 px-7 space-y-3 rounded-lg">
+            <img
+              class="absolute -left-5 -top-5 border-4 border-white bg-white rounded-full"
+              src="./images/client.png"
+              alt="client"
+            />
+            <p class="text-sm text-classic-primary text-justify">
+              We are providing the best and suitable home insurance services for
+              the people who are interested to treatment
+            </p>
+            <div>
+              <h3 class="text-xl font-bold">Ilham Yuda</h3>
+              <p class="text-sm text-classic-primary">Businessman</p>
+            </div>
+            <div class="circles flex justify-end">
+              <img src="./images/circles.png" alt="circles" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
         class="Discount mt-[20%] lg:mt-[10%] mb-10 w-full h-auto text-center space-y-5"
       >
         <h1 class="text-3xl lg:text-5xl font-bold">News & Events</h1>
@@ -251,7 +381,7 @@
           class="discount-card flex flex-col lg:flex-row items-center justify-center gap-4"
         >
           <div
-            class="card bg-base-100 w-96 shadow-xl p-3 px-3 space-y-3 border border-gray-300"
+            class="card bg-base-100 w-96 p-3 px-3 space-y-3 border border-gray-300"
           >
             <figure class="">
               <img
@@ -276,7 +406,7 @@
             </div>
           </div>
           <div
-            class="card bg-base-100 w-96 shadow-xl p-3 px-3 space-y-3 border border-gray-300"
+            class="card bg-base-100 w-96 p-3 px-3 space-y-3 border border-gray-300"
           >
             <figure class="">
               <img
@@ -301,7 +431,7 @@
             </div>
           </div>
           <div
-            class="card bg-base-100 w-96 shadow-xl p-3 px-3 space-y-3 border border-gray-300"
+            class="card bg-base-100 w-96 p-3 px-3 space-y-3 border border-gray-300"
           >
             <figure class="">
               <img
@@ -331,7 +461,7 @@
 
     <footer class="bg-[#efe3e3] text-base-content px-10 py-16 space-y-4">
       <div
-        class="footer-part2 footer w-[70vw] mx-auto justify-between items-center"
+        class="footer-part2 footer w-[80vw] lg:w-[70vw] mx-auto justify-between items-center"
       >
         <div class="footer-logo">
           <img class="w-16" src="./images/cup.png" alt="" />
@@ -345,7 +475,9 @@
           </button>
         </div>
       </div>
-      <div class="footer-part2 footer w-[70vw] mx-auto justify-between">
+      <div
+        class="footer-part2 footer w-[80vw] lg:w-[70vw] mx-auto justify-between"
+      >
         <nav>
           <h6 class="text-xl font-semibold">Services</h6>
           <a class="link link-hover">Branding</a>
@@ -367,7 +499,7 @@
           <a class="link link-hover">Cookie policy</a>
         </nav>
         <div class="social space-y-5">
-          <form>
+          <form class="space-y-3">
             <h6 class="text-xl font-semibold">Subscribe to Our Newsletter</h6>
             <fieldset class="form-control w-80">
               <div>
@@ -377,9 +509,9 @@
                   class="bg-transparent border-b-2 border-gray-400 py-2"
                 />
                 <button
-                  class="btn bg-gradient-to-r from-[#FF8938] to-[#FF0000] p-0 text-white rounded-[50%] w-[48px] h-10 join-item border-0 relative left-4"
+                  class="bg-gradient-to-r from-[#FF8938] to-[#FF0000] p-0 text-white rounded-[50%] w-8 h-8 border-0 relative left-4"
                 >
-                  <i class="fas fa-chevron-right inline"></i>
+                  <i class="fas fa-chevron-right inline text-[10px]"></i>
                 </button>
               </div>
             </fieldset>
@@ -391,7 +523,9 @@
           </div>
         </div>
       </div>
-      <p class="text-sm text-classic-primary text-center pt-3 tracking-widest">© 2027 UIDesign.to - All rights reserved.</p>
+      <p class="text-sm text-classic-primary text-center pt-3 tracking-widest">
+        © 2027 UIDesign.to - All rights reserved.
+      </p>
     </footer>
   </body>
 </html>

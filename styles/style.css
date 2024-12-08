@@ -2,3 +2,8 @@
     font-family: "Manrope", sans-serif;
     font-style: normal;
 }
+.text-gradient {
+    background: linear-gradient(to right, #FF8938, #FF0000);
+    background-clip: text;
+    color: transparent;
+  }
