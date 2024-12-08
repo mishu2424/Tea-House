@@ -4,9 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tea-House-Resources</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://kit.fontawesome.com/8609bb128c.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/8609bb128c.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,48 +17,143 @@
       rel="stylesheet"
     />
     <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-                'details-primary':'#777777',
-              }
-            }
-          }
-        }
-      </script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              "details-primary": "#777777",
+            },
+          },
+        },
+      };
+    </script>
   </head>
   <body class="m-0 font-manrope">
     <header class="mt-10">
-        <section class="header w-[90vw] lg:w-[70vw] mx-auto">
-            <div class="banner flex flex-col lg:flex-row items-center justify-center">
-                <div class="banner-details flex-1 space-y-5">
-                    <h1 class="text-5xl lg:text-7xl font-extrabold">It's good 
-                        tea time at The Tea House</h1>
-                    <p class="text-sm text-details-primary">Tea and Botanical Solutions Supplier Give Optimum <br> Satisfaction To Your Taste Buds.</p>
-                    <button class="btn bg-gradient-to-r from-[#FF8938] to-[#FF0000] px-3 py-2 text-white rounded">Explore More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 inline">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
-                      </svg>
-                      </button>
-                </div>
-                <div class="banner-img flex-1 relative">
-                    <img class="w-full h-full" src="./images/banner.png" alt="banner-img" srcset="">
-                    <div class="ratings lg:w-[40%] w-[50%] h-auto shadow flex items-center justify-center gap-5 p-2 lg:p-3 rounded absolute bottom-3 left-10 z-10 bg-white">
-                        <div class="rating-star">
-                            <i class="fas fa-star text-[#FFC850] text-3xl"></i>
-                        </div>
-                        <div class="rating-details ">
-                            <h3 class="text-3xl">5.00</h3>
-                            <p class="text-sm text-details-primary">Trust Pilot Ratings</p>
-                        </div>
-                    </div>
-                </div>
+      <section class="header w-[90vw] lg:w-[70vw] mx-auto">
+        <div
+          class="banner flex flex-col lg:flex-row items-center justify-center"
+        >
+          <div class="banner-details flex-1 space-y-5">
+            <h1 class="text-5xl lg:text-7xl font-extrabold">
+              It's good tea time at The Tea House
+            </h1>
+            <p class="text-sm text-details-primary">
+              Tea and Botanical Solutions Supplier Give Optimum <br />
+              Satisfaction To Your Taste Buds.
+            </p>
+            <button
+              class="btn bg-gradient-to-r from-[#FF8938] to-[#FF0000] px-3 py-2 text-white rounded"
+            >
+              Explore More
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-4 inline"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="banner-img flex-1 relative">
+            <img
+              class="w-full h-full"
+              src="./images/banner.png"
+              alt="banner-img"
+              srcset=""
+            />
+            <div
+              class="ratings lg:w-[40%] w-[50%] h-auto shadow flex items-center justify-center gap-5 p-2 lg:p-3 rounded absolute bottom-3 left-10 z-10 bg-white"
+            >
+              <div class="rating-star">
+                <i class="fas fa-star text-[#FFC850] text-3xl"></i>
+              </div>
+              <div class="rating-details">
+                <h3 class="text-3xl font-bold">5.00</h3>
+                <p class="text-sm text-details-primary">Trust Pilot Ratings</p>
+              </div>
             </div>
-
-        </section>
+          </div>
+        </div>
+      </section>
     </header>
-    <main></main>
+    <main class="mt-10 w-[80vw] lg:w-[70vw] mx-auto">
+      <section class="Products mb-10 w-full h-auto text-center space-y-5">
+        <h1 class="text-3xl lg:text-5xl font-bold">Our Featured Products</h1>
+        <p class="text-sm text-details-primary">
+          There are many variations of passages of Lorem Ipsum available, but
+          the majority have suffered alteration in some form,<br class="hidden lg:block"/>
+          by injected humour, or randomised words which don't look even slightly
+          believable.
+        </p>
+        <div class="image-collage grid grid-cols-1 lg:grid-cols-4 grid-rows-[auto_auto_auto_auto] lg:grid-rows-[auto] gap-8 lg:gap-5">
+          <div class="img-card flex flex-col items-center gap-5 py-4 bg-gradient-to-b from-gray-200 to-white rounded-md">
+            <img
+              class="w-2/5 h-auto lg:w-32 lg:h-full"
+              src="./images/tea-1.png"
+              alt="tea"
+              srcset=""
+            />
+            <div class="tea-details space-y-3">
+              <h4 class="text-base font-bold">Milk Tea</h4>
+              <p class="text-sm text-details-primary">
+                Creamer could be replaced by fresh milk
+              </p>
+            </div>
+          </div>
+          <div class="img-card flex flex-col items-center gap-5 py-4 bg-gradient-to-b from-gray-200 to-white rounded-md">
+            <img
+              class="w-2/5 h-auto lg:w-32 lg:h-full"
+              src="./images/tea-2.png"
+              alt="tea"
+              srcset=""
+            />
+            <div class="tea-details space-y-3">
+              <h4 class="text-base font-bold">Black Tea</h4>
+              <p class="text-sm text-details-primary">
+                Creamer could be replaced by fresh milk
+              </p>
+            </div>
+          </div>
+          <div class="img-card flex flex-col items-center gap-5 py-4 bg-gradient-to-b from-gray-200 to-white rounded-md">
+            <img
+              class="w-2/5 h-auto lg:w-32 lg:h-full"
+              src="./images/tea-3.png"
+              alt="tea"
+              srcset=""
+            />
+            <div class="tea-details space-y-3">
+              <h4 class="text-base font-bold">Lemon Tea</h4>
+              <p class="text-sm text-details-primary">
+                Creamer could be replaced by fresh milk
+              </p>
+            </div>
+          </div>
+          <div class="img-card flex flex-col items-center gap-5 py-4 bg-gradient-to-b from-gray-200 to-white rounded-md">
+            <img
+              class="w-2/5 h-auto lg:w-32 lg:h-full"
+              src="./images/tea-4.png"
+              alt="tea"
+              srcset=""
+            />
+            <div class="tea-details space-y-3">
+              <h4 class="text-base font-bold">Green Tea</h4>
+              <p class="text-sm text-details-primary">
+                Creamer could be replaced by fresh milk
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer></footer>
   </body>
 </html>
